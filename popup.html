@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>YouTube Tracker</h1>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="label">Videos</span>
+                <span class="value" id="videoCount">0</span>
+            </div>
+            <div class="stat-card">
+                <span class="label">Shorts</span>
+                <span class="value" id="shortsCount">0</span>
+            </div>
+        </div>
+
+        <div class="time-card">
+            <span class="label">Total Watch Time</span>
+            <span class="value" id="totalTime">00h 00m 00s</span>
+        </div>
+
+        <div class="session-card">
+            <span class="label">Current Session</span>
+            <div class="session-info">
+                <span class="video-title" id="sessionTitle">No Video Active</span>
+                <span class="value" id="sessionTime">00:00</span>
+            </div>
+        </div>
+
+        <div class="history-section">
+            <span class="label">Recent History</span>
+            <div id="historyList" class="history-list">
+                <!-- History items will be injected here -->
+            </div>
+        </div>
+
+        <button id="resetBtn">Reset Stats</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
